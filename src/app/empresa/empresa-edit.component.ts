@@ -28,7 +28,11 @@ export class EmpresaEditComponent implements OnInit {
   );
 
 
-  constructor(private activatedRoute: ActivatedRoute, private empresaservice: EmpresaService, private router: Router, private msgservice: MsgAlertaService,) {
+  constructor(
+      private activatedRoute: ActivatedRoute,
+      private empresaservice: EmpresaService,
+      private router: Router,
+      private msgservice: MsgAlertaService) {
     this.empresa = {};
     this.id = this.activatedRoute.snapshot.queryParams['id'];
   }

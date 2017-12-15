@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class LogoutComponent implements OnInit {
 
-  percent: number = 0;
+  percent = 0;
 
   redirectAfterLogin = ['/login'];
 
@@ -20,12 +20,12 @@ export class LogoutComponent implements OnInit {
     this.logout();
   }
 
-  logout(){
+  logout() {
     this.loginservice.logout();
     setInterval(() => {
       this.percent +=  10;
 
-      if(this.percent === 100){
+      if (this.percent === 100) {
         this.router.navigate(this.redirectAfterLogin);
       }
     }, 400);

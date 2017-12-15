@@ -26,18 +26,18 @@ export class MenuComponent implements OnInit {
     this.isCollapsed = !this.isCollapsed;
   }
 
-  clicouHome(){
-    this.menuservice.getHomeaMenu().then( resp =>{
+  clicouHome() {
+    this.menuservice.getHomeaMenu().then( resp => {
       this.router.navigate(['home']);
     });
 
   }
 
-  clicouEmpresas(){
+  clicouEmpresas() {
     this.router.navigate(['empresa']);
   }
 
-  clicouUsuarios(){
+  clicouUsuarios() {
     this.router.navigate(['usuario']);
 
   }

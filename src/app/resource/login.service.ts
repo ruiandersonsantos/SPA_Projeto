@@ -15,7 +15,7 @@ export class LoginService {
 
     public nivel: Number = 0;
 
-    public mostraMenu: boolean = false;
+    public mostraMenu = false;
 
     private objlogin = {
         grant_type: this.srvGlobal.getGrantType(),
@@ -40,14 +40,14 @@ export class LoginService {
       private jwtToken: JwtTokenService
   ) {
 
-      if (this.jwtToken.token){
+      if (this.jwtToken.token) {
 
           this.setPropriedadesAndToken();
       }
   }
 
 
-  login(username, password): Promise<any>{
+  login(username, password): Promise<any> {
 
     this.objlogin.username = username;
     this.objlogin.password = password;
@@ -64,7 +64,7 @@ export class LoginService {
         });
     }
 
-    logout(){
+    logout() {
         this.revokeToken();
     }
 
@@ -93,7 +93,7 @@ export class LoginService {
         this.getUsuario(token);
 
         if (+this.objUsuarioLogado.nivel > 0) {
-            this.nivel = +this.objUsuarioLogado.nivel
+            this.nivel = +this.objUsuarioLogado.nivel;
             this.mostraMenu = true;
         }
     }
@@ -108,7 +108,7 @@ export class LoginService {
 
     }
 
-  private getUsuario(tokenDeAcesso){
+  private getUsuario(tokenDeAcesso) {
    this.headers = new Headers({'Authorization': 'Bearer ' + tokenDeAcesso});
    this. headers.set('Content-Type', 'application/json');
     this.http.get(this.srvGlobal.getUrlBase() + '/user', {headers: this.headers})

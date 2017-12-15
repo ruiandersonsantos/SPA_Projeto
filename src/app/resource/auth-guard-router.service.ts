@@ -9,7 +9,7 @@ Sera implementado aqui o controle de acesso conforme o nivel do usuario.
  */
 
 @Injectable()
-export class AuthGuardRouterService implements CanActivate{
+export class AuthGuardRouterService implements CanActivate {
 
   constructor(private loginservice: LoginService, private router: Router) {
   }

@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {MsgAlertModel} from '../model/msg-alert.model';
-import {MsgAlertaService} from "../resource/msg-alerta.service";
+import {MsgAlertaService} from '../resource/msg-alerta.service';
 
 @Component({
   selector: 'app-msg-alert',

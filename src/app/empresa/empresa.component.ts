@@ -47,19 +47,19 @@ export class EmpresaComponent implements OnInit {
 
   }
 
-  getEmpresas(){
+  getEmpresas() {
     this.empresaservice.buscarEmpresas().then( response => {
       this.empresas = response.json();
       this.montaMensagem();
 
     }).catch( error => {
 
-    })
+    });
   }
 
 
 
-  editar(e, empresa){
+  editar(e, empresa) {
     e.preventDefault();
     this.router.navigate(['empresa/editar'], {queryParams: empresa});
   }

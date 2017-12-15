@@ -13,9 +13,9 @@ export class LoginComponent implements OnInit {
   public objUser = {
     usermane: '',
     password: ''
-  }
+  };
 
-  public msgError: string = '';
+  public msgError = '';
 
   redirectAfterLogin = ['/home'];
 
@@ -24,9 +24,9 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  login(){
+  login()  {
     this.srvlogin.login(this.objUser.usermane, this.objUser.password)
-        .then(obj =>{
+        .then(obj => {
           this.router.navigate(this.redirectAfterLogin);
         }).catch( response => {
 

@@ -10,43 +10,43 @@ export class GlobalService {
 
   constructor() { }
 
-  getUrlBase(){
+  getUrlBase() {
     return environment.urlBase;
   }
 
-  getUrlLogin(){
+  getUrlLogin() {
     return environment.urlLogin;
   }
 
-  getUrlLogout(){
+  getUrlLogout() {
     return environment.urlLogout;
   }
 
-  getClientId(){
+  getClientId() {
     return environment.client_id;
   }
 
-  getClientSecret(){
+  getClientSecret() {
     return environment.client_Secret;
   }
 
-  getGrantType(){
+  getGrantType() {
     return environment.grant_type;
   }
 
-  getVerboGET(){
+  getVerboGET() {
     return environment.verbo_get;
   }
 
-  getVerboPOST(){
+  getVerboPOST() {
     return environment.verbo_post;
   }
 
-  getVerboPUT(){
+  getVerboPUT() {
     return environment.verbo_put;
   }
 
-  getVerboDELETE(){
+  getVerboDELETE() {
     return environment.verbo_delete;
   }
 }

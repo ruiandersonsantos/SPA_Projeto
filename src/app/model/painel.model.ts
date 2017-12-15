@@ -6,10 +6,10 @@ export class PainelModel {
         rota_botao: string;
         id_botao: string;
         nome_botao: string;
-        mostraBotaoNovo: boolean
+        mostraBotaoNovo: boolean;
 
 
-        constructor(icone, titulo, rota_botao, id_botao, nome_botao, mostraBotaoNovo){
+        constructor(icone, titulo, rota_botao, id_botao, nome_botao, mostraBotaoNovo) {
 
             this.icone = icone;
             this.titulo = titulo;

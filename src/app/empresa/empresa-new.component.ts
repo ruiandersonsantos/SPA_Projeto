@@ -49,13 +49,13 @@ export class EmpresaNewComponent implements OnInit {
       this.mensagem = new MsgAlertModel();
   }
 
-  cadastrar(e){
+  cadastrar(e) {
 
    e.preventDefault();
 
    this.empresaservice.salvar(this.empresa)
        .then( response => {
-          let msg = this.msgservice.getAlerta(1,'Empresa ' + response.json().razao_social,' cadastrada com sucesso.');
+          const msg = this.msgservice.getAlerta(1, 'Empresa ' + response.json().razao_social, ' cadastrada com sucesso.');
           this.router.navigate(['empresa'], {queryParams: msg });
 
 

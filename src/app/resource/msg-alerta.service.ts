@@ -22,7 +22,7 @@ export class MsgAlertaService {
     return this.alerta;
   }
 
-  emitirMensagemNaTela(alerta: MsgAlertModel){
+  emitirMensagemNaTela(alerta: MsgAlertModel) {
       this.emitirMensagem.emit(alerta);
   }
 

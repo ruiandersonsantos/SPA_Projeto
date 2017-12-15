@@ -20,7 +20,7 @@ export class BuilderRequestService {
 
   }
 
-  builder(rota: string, verboHttp: string, obj: any): Promise<any>{
+  builder(rota: string, verboHttp: string, obj: any): Promise<any> {
       this.token = this.jwtToken.token;
 
       this.headers = new Headers({'Authorization': 'Bearer ' + this.token});
@@ -28,7 +28,7 @@ export class BuilderRequestService {
 
 
 
-    if( this.srvGlobal.getVerboGET() === verboHttp){
+    if ( this.srvGlobal.getVerboGET() === verboHttp) {
 
       return this.http.get(this.srvGlobal.getUrlBase() + rota, { headers: this.headers })
           .toPromise()
@@ -40,9 +40,9 @@ export class BuilderRequestService {
             return Promise.reject(error);
           });
 
-    };
+    }
 
-    if( this.srvGlobal.getVerboPOST() === verboHttp){
+    if ( this.srvGlobal.getVerboPOST() === verboHttp) {
 
       return this.http.post(this.srvGlobal.getUrlBase() + rota, obj, { headers: this.headers })
           .toPromise()
@@ -54,10 +54,10 @@ export class BuilderRequestService {
             return Promise.reject(error);
           });
 
-    };
+    }
 
 
-    if( this.srvGlobal.getVerboPUT() === verboHttp){
+    if ( this.srvGlobal.getVerboPUT() === verboHttp) {
 
       return this.http.put(this.srvGlobal.getUrlBase() + rota, obj, { headers: this.headers })
           .toPromise()
@@ -68,9 +68,9 @@ export class BuilderRequestService {
             return Promise.reject(error);
           });
 
-    };
+    }
 
-    if( this.srvGlobal.getVerboDELETE() === verboHttp){
+    if ( this.srvGlobal.getVerboDELETE() === verboHttp) {
 
       return this.http.delete(this.srvGlobal.getUrlBase() + rota, { headers: this.headers })
           .toPromise()

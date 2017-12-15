@@ -27,7 +27,7 @@ export class EmpresaEditComponent implements OnInit {
       false
   );
 
-
+  // construtor
   constructor(
       private activatedRoute: ActivatedRoute,
       private empresaservice: EmpresaService,

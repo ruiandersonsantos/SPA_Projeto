@@ -27,7 +27,7 @@ export class EmpresaEditComponent implements OnInit {
       false
   );
 
-  // construtor
+  // construtor modificado no phpstorm
   constructor(
       private activatedRoute: ActivatedRoute,
       private empresaservice: EmpresaService,

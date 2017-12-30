@@ -8,6 +8,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {PainelModule} from '../painel/painel.module';
 import {MsgAlertModule} from '../msg-alert/msg-alert.module';
 
+import { EmpresaRoutingModule } from './empresa-routing.module';
+
 import {FormsModule} from '@angular/forms';
 import {EmpresaService} from '../resource/empresa.service';
 
@@ -17,6 +19,7 @@ import {EmpresaService} from '../resource/empresa.service';
     CommonModule,
     PainelModule,
     MsgAlertModule,
+    EmpresaRoutingModule,
     NgbModule.forRoot(),
 
     FormsModule

@@ -6,8 +6,7 @@ import { HttpModule } from '@angular/http';
 
 /* Modulos de funcionalidades */
 import { AppRoutingModule } from './app-routing.module';
-import { EmpresaRoutingModule } from './empresa/empresa-routing.module';
-import { UsuarioRoutingModule } from './usuario/usuario-routing.module';
+
 
 /* Componentes */
 import { AppComponent } from './app.component';
@@ -44,8 +43,6 @@ import {UsuarioModule} from './usuario/usuario.module';
         BrowserModule,
         FormsModule,
         AppRoutingModule,
-        EmpresaRoutingModule,
-        UsuarioRoutingModule,
         HttpModule,
         EmpresaModule,
         PainelModule,

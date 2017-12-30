@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-// import { EmpresaComponent } from './empresa/empresa.component';
-import { HomeComponent } from './home/home.component';
-//import { EmpresaNewComponent } from './empresa/empresa-new.component';
-//import { EmpresaEditComponent } from './empresa/empresa-edit.component';
-import { LoginComponent } from './login/login.component';
-import { AuthGuardRouterService } from './resource/auth-guard-router.service';
-import { LogoutComponent } from './logout/logout.component';
-import {UsuarioComponent} from './usuario/usuario.component';
 
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
+
+import { AuthGuardRouterService } from './resource/auth-guard-router.service';
 
 const routes: Routes = [
   {
@@ -30,27 +27,6 @@ const routes: Routes = [
     component: LogoutComponent,
     canActivate: [AuthGuardRouterService]
   },
-  /*{
-    path: 'empresa',
-    component: EmpresaComponent,
-    canActivate: [AuthGuardRouterService]
-  },
-  {
-    path: 'empresa/novo',
-    component: EmpresaNewComponent,
-    canActivate: [AuthGuardRouterService]
-  },
-  {
-    path: 'empresa/editar',
-    component: EmpresaEditComponent,
-    canActivate: [AuthGuardRouterService]
-  },*/
-  {
-    path: 'usuario',
-    component: UsuarioComponent,
-    canActivate: [AuthGuardRouterService]
-  },
-
 ];
 
 @NgModule({

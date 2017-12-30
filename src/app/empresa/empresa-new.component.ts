@@ -27,7 +27,7 @@ export class EmpresaNewComponent implements OnInit {
 
     painel: PainelModel = new PainelModel(
 
-        'address-card-o',
+        'fa fa-building-o',
         'Cadastro de Empresa',
         'sem-rota',
         'painel_id_empresa_cadastro',

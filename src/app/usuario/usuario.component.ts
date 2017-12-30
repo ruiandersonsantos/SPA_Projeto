@@ -14,7 +14,7 @@ export class UsuarioComponent implements OnInit {
   mensagem: MsgAlertModel;
   usuarios: [''];
   painel: PainelModel = new PainelModel(
-      'fa fa-list-alt',
+      'fa fa-address-card',
       'Listagem de Usuário',
       '/usuario/novo',
       'painel_id_usuarios',

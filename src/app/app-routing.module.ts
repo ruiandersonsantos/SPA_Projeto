@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EmpresaComponent } from './empresa/empresa.component';
+// import { EmpresaComponent } from './empresa/empresa.component';
 import { HomeComponent } from './home/home.component';
-import { EmpresaNewComponent } from './empresa/empresa-new.component';
-import { EmpresaEditComponent } from './empresa/empresa-edit.component';
+//import { EmpresaNewComponent } from './empresa/empresa-new.component';
+//import { EmpresaEditComponent } from './empresa/empresa-edit.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuardRouterService } from './resource/auth-guard-router.service';
 import { LogoutComponent } from './logout/logout.component';
@@ -30,7 +30,7 @@ const routes: Routes = [
     component: LogoutComponent,
     canActivate: [AuthGuardRouterService]
   },
-  {
+  /*{
     path: 'empresa',
     component: EmpresaComponent,
     canActivate: [AuthGuardRouterService]
@@ -44,7 +44,7 @@ const routes: Routes = [
     path: 'empresa/editar',
     component: EmpresaEditComponent,
     canActivate: [AuthGuardRouterService]
-  },
+  },*/
   {
     path: 'usuario',
     component: UsuarioComponent,
